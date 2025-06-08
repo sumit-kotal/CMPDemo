@@ -1,0 +1,213 @@
+{
+  "imposters": [
+    {
+      "port": 2727,
+      "protocol": "http",
+      "name": "KMP Local Mock Server",
+      "stubs": [
+        {
+          "predicates": [
+            {
+              "deepEquals": {
+                "method": "GET",
+                "path": "/products"
+              }
+            }
+          ],
+          "responses": [
+            {
+              "is": {
+                "statusCode": 200,
+                "headers": {
+                  "Content-Type": "application/json"
+                },
+                "body": [
+                  {
+                    "id": "1",
+                    "title": "KMP Mug",
+                    "subtitle": "Ceramic mug",
+                    "imageUrl": "https://picsum.photos/400?random=1",
+                    "description": "A perfect mug for Kotlin developers."
+                  },
+                  {
+                    "id": "2",
+                    "title": "Compose Hoodie",
+                    "subtitle": "Stylish hoodie",
+                    "imageUrl": "https://picsum.photos/400?random=2",
+                    "description": "Wear your Jetpack Compose pride."
+                  },
+                  {
+                    "id": "3",
+                    "title": "KMP Stickers",
+                    "subtitle": "Decorative stickers",
+                    "imageUrl": "https://picsum.photos/400?random=3",
+                    "description": "Decorate your laptop with Kotlin flair."
+                  },
+                  {
+                    "id": "4",
+                    "title": "Android Plushie",
+                    "subtitle": "Soft toy",
+                    "imageUrl": "https://picsum.photos/400?random=4",
+                    "description": "A cuddly Android mascot to keep on your desk."
+                  },
+                  {
+                    "id": "5",
+                    "title": "Code Notebook",
+                    "subtitle": "Spiral-bound",
+                    "imageUrl": "https://picsum.photos/400?random=5",
+                    "description": "Take quick tech notes wherever you go."
+                  },
+                  {
+                    "id": "6",
+                    "title": "Compose T-Shirt",
+                    "subtitle": "Cotton Tee",
+                    "imageUrl": "https://picsum.photos/400?random=6",
+                    "description": "Show off your love for Jetpack Compose."
+                  },
+                  {
+                    "id": "7",
+                    "title": "Dev Mousepad",
+                    "subtitle": "Ergonomic design",
+                    "imageUrl": "https://picsum.photos/400?random=7",
+                    "description": "Smooth gliding for serious coding sessions."
+                  },
+                  {
+                    "id": "8",
+                    "title": "Kotlin Book",
+                    "subtitle": "Master Kotlin",
+                    "imageUrl": "https://picsum.photos/400?random=8",
+                    "description": "Your complete Kotlin reference guide."
+                  },
+                  {
+                    "id": "9",
+                    "title": "Laptop Stand",
+                    "subtitle": "Adjustable",
+                    "imageUrl": "https://picsum.photos/400?random=9",
+                    "description": "Work comfortably and cool your laptop."
+                  },
+                  {
+                    "id": "10",
+                    "title": "KMP Cap",
+                    "subtitle": "Snapback",
+                    "imageUrl": "https://picsum.photos/400?random=10",
+                    "description": "Stay shaded and stylish in Kotlin fashion."
+                  },
+                  {
+                    "id": "11",
+                    "title": "Jetpack Stickers",
+                    "subtitle": "Glossy finish",
+                    "imageUrl": "https://picsum.photos/400?random=11",
+                    "description": "Add flair to your gear with Jetpack swag."
+                  },
+                  {
+                    "id": "12",
+                    "title": "Wireless Charger",
+                    "subtitle": "Fast charging",
+                    "imageUrl": "https://picsum.photos/400?random=12",
+                    "description": "Charge your devices with ease."
+                  },
+                  {
+                    "id": "13",
+                    "title": "Android Socks",
+                    "subtitle": "Cozy techwear",
+                    "imageUrl": "https://picsum.photos/400?random=13",
+                    "description": "Comfy socks for Android devs."
+                  },
+                  {
+                    "id": "14",
+                    "title": "Mechanical Keyboard",
+                    "subtitle": "RGB Backlit",
+                    "imageUrl": "https://picsum.photos/400?random=14",
+                    "description": "Type like a pro with tactile feedback."
+                  },
+                  {
+                    "id": "15",
+                    "title": "Compose Backpack",
+                    "subtitle": "Laptop ready",
+                    "imageUrl": "https://picsum.photos/400?random=15",
+                    "description": "Carry your dev tools in style."
+                  },
+                  {
+                    "id": "16",
+                    "title": "Kotlin Poster",
+                    "subtitle": "Room decor",
+                    "imageUrl": "https://picsum.photos/400?random=16",
+                    "description": "Brighten your wall with Kotlin inspiration."
+                  },
+                  {
+                    "id": "17",
+                    "title": "Dark Mode Lamp",
+                    "subtitle": "Mood lighting",
+                    "imageUrl": "https://picsum.photos/400?random=17",
+                    "description": "Perfect vibe for night coding."
+                  },
+                  {
+                    "id": "18",
+                    "title": "Noise-Canceling Headphones",
+                    "subtitle": "Focus mode",
+                    "imageUrl": "https://picsum.photos/400?random=18",
+                    "description": "Silence distractions, boost concentration."
+                  },
+                  {
+                    "id": "19",
+                    "title": "Compose Badge",
+                    "subtitle": "Enamel pin",
+                    "imageUrl": "https://picsum.photos/400?random=19",
+                    "description": "Pin your Compose cred anywhere."
+                  },
+                  {
+                    "id": "20",
+                    "title": "KMP Water Bottle",
+                    "subtitle": "Stay hydrated",
+                    "imageUrl": "https://picsum.photos/400?random=20",
+                    "description": "Keep coding and sipping."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "predicates": [
+            {
+              "deepEquals": {
+                "method": "GET",
+                "path": "/profile"
+              }
+            }
+          ],
+          "responses": [
+            {
+              "is": {
+                "statusCode": 200,
+                "headers": {
+                  "Content-Type": "application/json"
+                },
+                "body": {
+                  "name": "Sumit Kotal",
+                  "email": "kotalsumit@gmail.com",
+                  "phone": "+91-9930884866"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "responses": [
+            {
+              "is": {
+                "statusCode": 404,
+                "headers": {
+                  "Content-Type": "application/json"
+                },
+                "body": {
+                  "error": "Not found"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{"level":"info","message":"[mb:2525] mountebank v2.9.1 now taking orders - point your browser to http://localhost:2525/ for help","timestamp":"2025-06-08T12:47:18.095Z"}
+{"level":"info","message":"[mb:2525] PUT /imposters","timestamp":"2025-06-08T12:47:18.121Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] Open for business...","timestamp":"2025-06-08T12:47:18.125Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:127.0.0.1:57474 => GET /products","timestamp":"2025-06-08T12:47:25.939Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:127.0.0.1:57476 => GET /favicon.ico","timestamp":"2025-06-08T12:47:28.419Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:127.0.0.1:57479 => GET /profile","timestamp":"2025-06-08T12:47:34.589Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:127.0.0.1:57480 => GET /favicon.ico","timestamp":"2025-06-08T12:47:34.651Z"}
+{"level":"info","message":"[mb:2525] Adios - see you soon?","timestamp":"2025-06-08T12:48:32.032Z"}
