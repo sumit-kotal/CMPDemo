@@ -131,16 +131,16 @@ This ensures fast access to frequently used data without repeated network calls.
 ## Screenshots
 
 ### Android
-![Android Login](screenshots/Screenshot - Moto - 1.png)
-![Android Home](screenshots/Screenshot - Moto - 2.png)
-![Android Product Details](screenshots/Screenshot - Moto - 3.png)
-![Android Profile](screenshots/Screenshot - Moto - 4.png)
+![Android Login](screenshots/Screenshot_Android_1.png)
+![Android Home](screenshots/Screenshot_Android_2.png)
+![Android Product Details](screenshots/Screenshot_Android_3.png)
+![Android Profile](screenshots/Screenshot_Android_4.png)
 
 ### iOS
-![iOS Login](screenshots/Screenshot - iPhone 16 Pro - 1.png)
-![iOS Home](screenshots/Screenshot - iPhone 16 Pro - 2.png)
-![iOS Product Details](screenshots/Screenshot - iPhone 16 Pro - 3.png)
-![iOS Profile](screenshots/Screenshot - iPhone 16 Pro - 4.png)
+![iOS Login](screenshots/Screenshot_iPhone16Pro_1.png)
+![iOS Home](screenshots/Screenshot_iPhone16Pro_2.png)
+![iOS Product Details](screenshots/Screenshot_iPhone16Pro_3.png)
+![iOS Profile](screenshots/Screenshot_iPhone16Pro_4.png)
 
 > Make sure these images are present in a `/screenshots` folder.
 
