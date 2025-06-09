@@ -47,7 +47,9 @@ kotlin {
             implementation(libs.koin.compose)
             implementation(libs.multiplatformSettings)
             implementation(libs.materialKolor)
-            implementation(libs.kamel)
+            implementation(libs.coil)
+            implementation(libs.coil.network)
+            implementation(libs.composeIcons.featherIcons)
         }
 
         commonTest.dependencies {

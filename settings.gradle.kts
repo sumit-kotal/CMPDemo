@@ -29,6 +29,4 @@ dependencyResolutionManagement {
     }
 }
 include(":composeApp")
-include(":mockapi")
-project(":mockapi").projectDir = file("mockapi")
 
