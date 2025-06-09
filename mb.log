@@ -1,5 +1,11 @@
-{"level":"info","message":"[mb:2525] mountebank v2.9.1 now taking orders - point your browser to http://localhost:2525/ for help","timestamp":"2025-06-08T12:48:34.697Z"}
-{"level":"info","message":"[mb:2525] PUT /imposters","timestamp":"2025-06-08T12:48:34.719Z"}
-{"level":"info","message":"[http:2727 KMP Local Mock Server] Open for business...","timestamp":"2025-06-08T12:48:34.723Z"}
-{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:127.0.0.1:57546 => GET /profile","timestamp":"2025-06-08T12:49:42.814Z"}
-{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:127.0.0.1:57548 => GET /favicon.ico","timestamp":"2025-06-08T12:49:45.585Z"}
+{"level":"info","message":"[mb:2525] mountebank v2.9.1 now taking orders - point your browser to http://localhost:2525/ for help","timestamp":"2025-06-09T15:08:48.626Z"}
+{"level":"info","message":"[mb:2525] PUT /imposters","timestamp":"2025-06-09T15:08:48.663Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] Open for business...","timestamp":"2025-06-09T15:08:48.668Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:192.168.0.113:47066 => GET /products","timestamp":"2025-06-09T15:09:11.174Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:192.168.0.113:47070 => GET /products","timestamp":"2025-06-09T15:09:25.986Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:192.168.0.113:47072 => GET /products","timestamp":"2025-06-09T15:09:27.972Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:192.168.0.113:47086 => GET /products","timestamp":"2025-06-09T15:10:49.855Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:192.168.0.113:47094 => GET /products","timestamp":"2025-06-09T15:14:11.128Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:192.168.0.113:47096 => GET /products","timestamp":"2025-06-09T15:14:19.319Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:192.168.0.113:47098 => GET /products","timestamp":"2025-06-09T15:14:22.375Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:192.168.0.113:47112 => GET /profile","timestamp":"2025-06-09T15:18:04.156Z"}

@@ -1,8 +1,11 @@
 package org.demo.multiplatform.di
 
+import com.russhwolf.settings.Settings
 import org.demo.multiplatform.data.remote.ApiService
 import org.demo.multiplatform.data.repository.ProductRepositoryImpl
+import org.demo.multiplatform.data.repository.ProfileRepositoryImpl
 import org.demo.multiplatform.domain.repository.ProductRepository
+import org.demo.multiplatform.domain.repository.ProfileRepository
 import org.demo.multiplatform.presentation.home.HomeViewModel
 import org.demo.multiplatform.presentation.login.LoginViewModel
 import org.demo.multiplatform.presentation.detail.ProductDetailViewModel
@@ -16,6 +19,9 @@ fun appModule() = module {
 
     // Repositories
     single<ProductRepository> { ProductRepositoryImpl(get()) }
+    single<ProfileRepository> { ProfileRepositoryImpl(get(),get()) }
+
+    single { Settings() }
 
     // ViewModels
     factory { LoginViewModel() }

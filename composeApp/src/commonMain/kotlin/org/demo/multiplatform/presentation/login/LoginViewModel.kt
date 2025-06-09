@@ -1,7 +1,12 @@
 package org.demo.multiplatform.presentation.login
 
+import org.demo.multiplatform.domain.model.Credentials
+
 class LoginViewModel {
     fun onLoginClick() {
-        // No-op for now: could log analytics or simulate success
+        // Any login function
     }
+
+    fun checkCredentials(creds: Credentials) = creds.isNotEmpty() && creds.login == "admin"
+
 }

@@ -1,8 +1,15 @@
-{"level":"info","message":"[mb:2525] mountebank v2.9.1 now taking orders - point your browser to http://localhost:2525/ for help","timestamp":"2025-06-08T12:47:18.095Z"}
-{"level":"info","message":"[mb:2525] PUT /imposters","timestamp":"2025-06-08T12:47:18.121Z"}
-{"level":"info","message":"[http:2727 KMP Local Mock Server] Open for business...","timestamp":"2025-06-08T12:47:18.125Z"}
-{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:127.0.0.1:57474 => GET /products","timestamp":"2025-06-08T12:47:25.939Z"}
-{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:127.0.0.1:57476 => GET /favicon.ico","timestamp":"2025-06-08T12:47:28.419Z"}
-{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:127.0.0.1:57479 => GET /profile","timestamp":"2025-06-08T12:47:34.589Z"}
-{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:127.0.0.1:57480 => GET /favicon.ico","timestamp":"2025-06-08T12:47:34.651Z"}
-{"level":"info","message":"[mb:2525] Adios - see you soon?","timestamp":"2025-06-08T12:48:32.032Z"}
+{"level":"info","message":"[mb:2525] mountebank v2.9.1 now taking orders - point your browser to http://localhost:2525/ for help","timestamp":"2025-06-09T10:36:49.390Z"}
+{"level":"info","message":"[mb:2525] PUT /imposters","timestamp":"2025-06-09T10:36:49.414Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] Open for business...","timestamp":"2025-06-09T10:36:49.419Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:192.168.0.110:44184 => GET /products","timestamp":"2025-06-09T10:38:46.681Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:192.168.0.110:44186 => GET /favicon.ico","timestamp":"2025-06-09T10:38:46.900Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:192.168.0.113:43080 => GET /products","timestamp":"2025-06-09T12:27:10.956Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:192.168.0.113:43200 => GET /products","timestamp":"2025-06-09T12:27:45.616Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:192.168.0.113:43252 => GET /products","timestamp":"2025-06-09T12:28:00.447Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:192.168.0.113:43272 => GET /products","timestamp":"2025-06-09T12:28:05.557Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:192.168.0.113:43550 => GET /products","timestamp":"2025-06-09T12:29:24.764Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:192.168.0.113:43848 => GET /products","timestamp":"2025-06-09T12:29:58.325Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:192.168.0.113:44794 => GET /products","timestamp":"2025-06-09T12:35:11.328Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:192.168.0.113:45040 => GET /products","timestamp":"2025-06-09T12:36:52.238Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:192.168.0.113:45056 => GET /products","timestamp":"2025-06-09T12:37:01.388Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:192.168.0.113:45060 => GET /products","timestamp":"2025-06-09T12:37:04.098Z"}

@@ -9,9 +9,11 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.font.FontWeight
 import cafe.adriel.voyager.core.screen.Screen
 import org.koin.compose.koinInject
 
@@ -24,26 +26,50 @@ object ProfileScreen : Screen {
 
         Scaffold(
             topBar = {
-                TopAppBar(title = { Text("Profile") })
+                TopAppBar(
+                    title = { Text("User Profile") },
+                    colors = TopAppBarDefaults.topAppBarColors(
+                        containerColor = MaterialTheme.colorScheme.surface,
+                        titleContentColor = MaterialTheme.colorScheme.onSurface
+                    )
+                )
             }
         ) { padding ->
             Box(
                 modifier = Modifier
                     .fillMaxSize()
                     .padding(padding)
+                    .padding(24.dp)
             ) {
                 when {
                     uiState.isLoading -> CircularProgressIndicator(modifier = Modifier.align(Alignment.Center))
-                    uiState.error != null -> Text("Error: ${uiState.error}", color = MaterialTheme.colorScheme.error)
+
+                    uiState.error != null -> Text(
+                        text = "Error: ${uiState.error}",
+                        color = MaterialTheme.colorScheme.error,
+                        style = MaterialTheme.typography.bodyMedium,
+                        modifier = Modifier.align(Alignment.Center)
+                    )
+
                     uiState.profile != null -> {
                         Column(
                             modifier = Modifier
                                 .fillMaxWidth()
-                                .padding(16.dp)
+                                .align(Alignment.TopCenter),
+                            verticalArrangement = Arrangement.spacedBy(12.dp)
                         ) {
-                            Text("Name: ${uiState.profile?.name}")
-                            Text("Email: ${uiState.profile?.email}")
-                            Text("Phone: ${uiState.profile?.phone}")
+                            Text(
+                                text = uiState.profile!!.name,
+                                style = MaterialTheme.typography.headlineMedium.copy(fontWeight = FontWeight.Bold)
+                            )
+                            Text(
+                                text = uiState.profile!!.email,
+                                style = MaterialTheme.typography.titleMedium.copy(color = MaterialTheme.colorScheme.primary)
+                            )
+                            Text(
+                                text = "Phone: ${uiState.profile!!.phone}",
+                                style = MaterialTheme.typography.bodyLarge
+                            )
                         }
                     }
                 }
