@@ -15,3 +15,6 @@ Pods/
 *.jks
 *.gpg
 *yarn.lock
+mb.log
+mb.pid
+mb1.log
