@@ -7,7 +7,6 @@ plugins {
     alias(libs.plugins.compose)
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlinx.serialization)
-    alias(libs.plugins.sqlDelight)
     alias(libs.plugins.buildKonfig)
 }
 
@@ -64,12 +63,10 @@ kotlin {
             implementation(libs.androidx.activityCompose)
             implementation(libs.kotlinx.coroutines.android)
             implementation(libs.ktor.client.okhttp)
-            implementation(libs.sqlDelight.driver.android)
         }
 
         iosMain.dependencies {
             implementation(libs.ktor.client.darwin)
-            implementation(libs.sqlDelight.driver.native)
         }
 
     }
@@ -102,15 +99,5 @@ buildkonfig {
     // https://github.com/yshrsmz/BuildKonfig#gradle-configuration
     packageName = "org.demo.multiplatform"
     defaultConfigs {
-    }
-}
-
-sqldelight {
-    databases {
-        create("MyDatabase") {
-            // Database configuration here.
-            // https://cashapp.github.io/sqldelight
-            packageName.set("org.demo.multiplatform.db")
-        }
     }
 }
