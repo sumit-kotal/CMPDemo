@@ -1,6 +1,6 @@
 # Compose Multiplatform Demo App
 
-This is a Compose Multiplatform app demonstrating a product catalog with login and profile functionality. It uses a mock API served locally via [Mountebank](https://www.mbtest.org/) and is built following modern Android and multiplatform practices.
+This is a Compose Multiplatform app demonstrating a product catalog with login and profile functionality. It uses a mock API served locally via [Mountebank](https://github.com/bbyars/mountebank) and is built following modern Android and multiplatform practices.
 
 ---
 
