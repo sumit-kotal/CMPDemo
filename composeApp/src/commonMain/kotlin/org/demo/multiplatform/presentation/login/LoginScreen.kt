@@ -47,6 +47,7 @@ import compose.icons.feathericons.User
 import org.demo.multiplatform.domain.model.Credentials
 import org.demo.multiplatform.presentation.RootScreen
 import org.demo.multiplatform.presentation.home.HomeScreen
+import org.demo.multiplatform.theme.AppTheme
 import org.koin.compose.koinInject
 
 object LoginScreen : Screen {
@@ -54,24 +55,24 @@ object LoginScreen : Screen {
     override fun Content() {
         val navigator = LocalNavigator.currentOrThrow
         val viewModel: LoginViewModel = koinInject()
-
-        Column(modifier = Modifier
-            .fillMaxSize()
-            .padding(16.dp),
-            verticalArrangement = Arrangement.Center
-        ) {
-            Text("Login", style = MaterialTheme.typography.headlineMedium)
-            Spacer(Modifier.height(16.dp))
-            Button(onClick = {
-                viewModel.onLoginClick()
-                navigator.push(HomeScreen)
-            }) {
-                Text("Login")
+        AppTheme {
+            Column(modifier = Modifier
+                .fillMaxSize()
+                .padding(16.dp),
+                verticalArrangement = Arrangement.Center
+            ) {
+                Text("Login", style = MaterialTheme.typography.headlineMedium)
+                Spacer(Modifier.height(16.dp))
+                Button(onClick = {
+                    viewModel.onLoginClick()
+                    navigator.push(HomeScreen)
+                }) {
+                    Text("Login")
+                }
             }
+
+            LoginForm(viewModel,navigator)
         }
-
-        LoginForm(viewModel,navigator)
-
     }
 }
 
@@ -116,7 +117,7 @@ fun LoginForm(viewModel: LoginViewModel, navigator: Navigator) {
                     }
                     else {
                         viewModel.onLoginClick()
-                        navigator.push(RootScreen)
+                        navigator.replace(RootScreen)
                     }
                 },
                 enabled = credentials.isNotEmpty(),

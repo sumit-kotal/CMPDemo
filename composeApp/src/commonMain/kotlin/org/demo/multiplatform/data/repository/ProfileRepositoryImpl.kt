@@ -1,12 +1,10 @@
 package org.demo.multiplatform.data.repository
 
 import com.russhwolf.settings.Settings
-import com.russhwolf.settings.set
-import com.russhwolf.settings.get
 import kotlinx.serialization.json.Json
+import org.demo.multiplatform.data.remote.ApiService
 import org.demo.multiplatform.domain.model.UserProfile
 import org.demo.multiplatform.domain.repository.ProfileRepository
-import org.demo.multiplatform.data.remote.ApiService
 import kotlin.time.Clock
 import kotlin.time.ExperimentalTime
 

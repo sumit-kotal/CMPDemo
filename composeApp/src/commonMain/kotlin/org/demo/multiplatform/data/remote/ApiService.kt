@@ -18,7 +18,9 @@ class ApiService {
         }
     }
 
-    private val baseUrl = "http://192.168.0.196:2727"
+    private val localIP = "192.168.0.196"
+
+    private val baseUrl = "http://$localIP:2727"
 
     suspend fun getProducts(): List<Product> {
         return try {

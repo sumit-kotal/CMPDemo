@@ -12,7 +12,6 @@ class ProductRepositoryImpl(
         return try {
             apiService.getProducts()
         } catch (e: Exception) {
-            // You can later expand this with Result wrapper
             emptyList()
         }
     }

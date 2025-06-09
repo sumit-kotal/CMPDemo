@@ -15,7 +15,6 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.BottomAppBar
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CircularProgressIndicator
@@ -42,8 +41,12 @@ import coil3.compose.AsyncImage
 import coil3.compose.LocalPlatformContext
 import coil3.request.ImageRequest
 import coil3.request.crossfade
+import multiplatformprojectdemo.composeapp.generated.resources.Res
+import multiplatformprojectdemo.composeapp.generated.resources.error_placeholder
+import multiplatformprojectdemo.composeapp.generated.resources.product_placeholder
 import org.demo.multiplatform.domain.model.Product
 import org.demo.multiplatform.presentation.detail.ProductDetailScreen
+import org.jetbrains.compose.resources.painterResource
 import org.koin.compose.koinInject
 
 object HomeScreen : Screen {
@@ -137,9 +140,9 @@ fun ProductCard(product: Product){
                 model = ImageRequest.Builder(LocalPlatformContext.current)
                     .data(product.imageUrl)
                     .crossfade(true)
-                    //.placeholder(R.drawable.placeholder)
-                    //.error(R.drawable.error_image)
                     .build(),
+                placeholder = painterResource(Res.drawable.product_placeholder),
+                error = painterResource(Res.drawable.error_placeholder),
                 contentDescription = product.description,
                 contentScale = ContentScale.Crop,
                 modifier = Modifier
