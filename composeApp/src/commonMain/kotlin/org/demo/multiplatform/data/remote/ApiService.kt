@@ -10,6 +10,12 @@ import kotlinx.serialization.json.Json
 import org.demo.multiplatform.domain.model.Product
 import org.demo.multiplatform.domain.model.UserProfile
 
+/**
+ * Service class for making API calls to a remote server.
+ *
+ * This class uses Ktor HTTP client to interact with a server running on a local network.
+ * It provides methods to fetch product information and user profiles.
+ */
 class ApiService {
 
     private val httpClient = HttpClient {

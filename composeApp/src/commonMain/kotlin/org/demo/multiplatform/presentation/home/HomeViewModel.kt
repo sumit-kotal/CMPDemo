@@ -8,6 +8,15 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import org.demo.multiplatform.domain.repository.ProductRepository
 
+/**
+ * ViewModel for the Home screen.
+ *
+ * This ViewModel is responsible for fetching and managing the product data
+ * for the Home screen. It exposes the UI state as a [StateFlow] that can be
+ * observed by the UI.
+ *
+ * @param repository The repository for fetching product data.
+ */
 class HomeViewModel(
     private val repository: ProductRepository
 ) {

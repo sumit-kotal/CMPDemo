@@ -50,6 +50,19 @@ import org.demo.multiplatform.presentation.home.HomeScreen
 import org.demo.multiplatform.theme.AppTheme
 import org.koin.compose.koinInject
 
+/**
+ * Represents the login screen of the application.
+ * This object implements the `Screen` interface, making it a navigable screen
+ * within the Voyager navigation framework.
+ *
+ * The screen displays a simple login interface with a "Login" title and a "Login" button.
+ * It injects a `LoginViewModel` to handle login logic.
+ * Upon clicking the "Login" button, it triggers the `onLoginClick` method in the ViewModel
+ * and navigates to the `HomeScreen`.
+ *
+ * It also includes a `LoginForm` composable which is responsible for the actual
+ * input fields and logic for user authentication.
+ */
 object LoginScreen : Screen {
     @Composable
     override fun Content() {

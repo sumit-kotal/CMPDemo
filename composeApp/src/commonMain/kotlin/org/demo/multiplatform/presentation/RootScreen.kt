@@ -23,6 +23,13 @@ import org.demo.multiplatform.presentation.home.HomeScreen
 import org.demo.multiplatform.presentation.profile.ProfileScreen
 import org.demo.multiplatform.theme.AppTheme
 
+/**
+ * Represents the root screen of the application, managing navigation between different sections.
+ *
+ * This screen utilizes a bottom navigation bar to switch between [HomeScreen] and [ProfileScreen].
+ * It maintains the state of the currently selected navigation item and displays the corresponding
+ * screen's content.
+ */
 object RootScreen : Screen {
 
     private val navItems = listOf(

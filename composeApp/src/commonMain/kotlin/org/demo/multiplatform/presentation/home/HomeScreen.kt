@@ -49,6 +49,12 @@ import org.demo.multiplatform.presentation.detail.ProductDetailScreen
 import org.jetbrains.compose.resources.painterResource
 import org.koin.compose.koinInject
 
+/**
+ * HomeScreen is the main screen of the application.
+ * It displays a list of products fetched from the [HomeViewModel].
+ * It handles loading, error, and success states for product fetching.
+ * Users can navigate to the [ProductDetailScreen] by clicking on a product card.
+ */
 object HomeScreen : Screen {
 
     @OptIn(ExperimentalMaterial3Api::class)

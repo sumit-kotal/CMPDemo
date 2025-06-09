@@ -14,16 +14,47 @@ import org.koin.dsl.module
 
 fun appModule() = module {
 
-    // API service - Ktor
-    single { ApiService() }
+    networkModule
+    repositoryModule
+    viewModelModule
+    settingsModule
+}
 
-    // Repositories
+/**
+ * Module providing settings-related dependencies.
+ */
+val settingsModule = module {
+    single { Settings() }
+}
+
+/**
+ * Network module for providing API service. - Ktor
+ */
+val networkModule = module {
+    single { ApiService() }
+}
+
+/**
+ * Koin module for providing repository dependencies.
+ *
+ * This module defines how repository interfaces are implemented and provided
+ * to other parts of the application.
+ */
+val repositoryModule = module {
     single<ProductRepository> { ProductRepositoryImpl(get()) }
     single<ProfileRepository> { ProfileRepositoryImpl(get(),get()) }
+}
 
-    single { Settings() }
-
-    // ViewModels
+/**
+ * Koin module for providing ViewModel instances.
+ * This module defines how ViewModels are created and injected throughout the application.
+ *
+ * - `LoginViewModel`: Provided as a factory, meaning a new instance is created each time it's requested.
+ * - `HomeViewModel`: Provided as a factory, depends on a `ProductRepository` (obtained via `get()`).
+ * - `ProductDetailViewModel`: Provided as a factory.
+ * - `ProfileViewModel`: Provided as a factory, depends on a `ProfileRepository` (obtained via `get()`).
+ */
+val viewModelModule = module {
     factory { LoginViewModel() }
     factory { HomeViewModel(get()) }
     factory { ProductDetailViewModel() }

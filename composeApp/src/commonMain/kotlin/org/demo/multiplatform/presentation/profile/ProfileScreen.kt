@@ -23,6 +23,14 @@ import androidx.compose.ui.unit.dp
 import cafe.adriel.voyager.core.screen.Screen
 import org.koin.compose.koinInject
 
+/**
+ * A screen that displays the user's profile information.
+ * It uses a [ProfileViewModel] to fetch and manage the profile data.
+ *
+ * The screen displays a loading indicator while the data is being fetched,
+ * an error message if an error occurs, or the user's profile information
+ * (name, email, and phone number) if the data is successfully fetched.
+ */
 object ProfileScreen : Screen {
     @OptIn(ExperimentalMaterial3Api::class)
     @Composable

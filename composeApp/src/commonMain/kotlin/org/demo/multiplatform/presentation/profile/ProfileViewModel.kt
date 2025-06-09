@@ -4,6 +4,15 @@ import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
 import org.demo.multiplatform.domain.repository.ProfileRepository
 
+/**
+ * ViewModel for the Profile screen.
+ *
+ * This ViewModel is responsible for fetching and managing the user's profile data.
+ * It exposes the profile data as a [StateFlow] of [ProfileUiState], which can be observed
+ * by the UI to update itself.
+ *
+ * @param repository The [ProfileRepository] used to fetch the user's profile data.
+ */
 class ProfileViewModel(
     private val repository: ProfileRepository
 ) {

@@ -8,6 +8,16 @@ import org.demo.multiplatform.domain.repository.ProfileRepository
 import kotlin.time.Clock
 import kotlin.time.ExperimentalTime
 
+/**
+ * Implementation of [ProfileRepository] that retrieves user profile data.
+ *
+ * This repository first attempts to load the user profile from local settings (cache).
+ * If the cached data is older than 24 hours or not available, it fetches the profile
+ * from the [apiService] and then updates the cache.
+ *
+ * @param apiService The service responsible for making network requests to fetch user profile data.
+ * @param settings The [Settings] instance used for storing and retrieving cached user profile data.
+ */
 class ProfileRepositoryImpl(
     private val apiService: ApiService,
     private val settings: Settings

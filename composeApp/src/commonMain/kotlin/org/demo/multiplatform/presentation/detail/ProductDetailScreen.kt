@@ -26,6 +26,19 @@ import coil3.request.ImageRequest
 import coil3.request.crossfade
 import org.demo.multiplatform.domain.model.Product
 
+/**
+ * A screen that displays the details of a specific product.
+ *
+ * This screen uses a [Scaffold] to provide a basic layout structure, including a [TopAppBar]
+ * that displays the title "Product Details". The main content area is a scrollable [Column]
+ * that displays the product's image, title, subtitle, and description.
+ *
+ * The product image is loaded asynchronously using [AsyncImage] from the Coil library.
+ * The product details are displayed using [Text] composables with appropriate styling
+ * from the [MaterialTheme].
+ *
+ * @param product The [Product] object containing the details to be displayed.
+ */
 data class ProductDetailScreen(val product: Product) : Screen {
     @OptIn(ExperimentalMaterial3Api::class)
     @Composable
