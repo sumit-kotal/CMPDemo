@@ -131,18 +131,20 @@ This ensures fast access to frequently used data without repeated network calls.
 ## Screenshots
 
 ### Android
-![Android Login](screenshots/Screenshot_Android_1.png)
-![Android Home](screenshots/Screenshot_Android_2.png)
-![Android Product Details](screenshots/Screenshot_Android_3.png)
-![Android Profile](screenshots/Screenshot_Android_4.png)
+<p float="left">
+  <img src="screenshots/Screenshot_Android_1.png" width="200"/>
+  <img src="screenshots/Screenshot_Android_2.png" width="200"/>
+  <img src="screenshots/Screenshot_Android_3.png" width="200"/>
+  <img src="screenshots/Screenshot_Android_4.png" width="200"/>
+</p>
 
 ### iOS
-![iOS Login](screenshots/Screenshot_iPhone16Pro_1.png)
-![iOS Home](screenshots/Screenshot_iPhone16Pro_2.png)
-![iOS Product Details](screenshots/Screenshot_iPhone16Pro_3.png)
-![iOS Profile](screenshots/Screenshot_iPhone16Pro_4.png)
-
-> Make sure these images are present in a `/screenshots` folder.
+<p float="left">
+  <img src="screenshots/Screenshot_iPhone16Pro_1.png" width="200"/>
+  <img src="screenshots/Screenshot_iPhone16Pro_2.png" width="200"/>
+  <img src="screenshots/Screenshot_iPhone16Pro_3.png" width="200"/>
+  <img src="screenshots/Screenshot_iPhone16Pro_4.png" width="200"/>
+</p>
 
 ---
 
