@@ -4,18 +4,19 @@ This is a Compose Multiplatform app demonstrating a product catalog with login a
 
 ---
 
-##  Tech Stack
+## Tech Stack
 
-- **Compose Multiplatform** – Shared UI for Android and IOS
+- **Compose Multiplatform** – Shared UI for Android and iOS
 - **Voyager** – Navigation
 - **Ktor Client** – Networking
 - **Koin** – Dependency Injection
 - **Coil v3** – Image loading
 - **Mountebank** – Local mock API
+- **Multiplatform Settings** – Lightweight key-value caching
 
 ---
 
-##  Project Features
+## Project Features
 
 - Login screen with validation
 - Home screen with product listing
@@ -23,20 +24,22 @@ This is a Compose Multiplatform app demonstrating a product catalog with login a
 - Bottom navigation
 - Offline-ready with mock API
 - Smooth image loading with placeholder and error handling
+- Caching using [Multiplatform Settings](https://github.com/russhwolf/multiplatform-settings)
 
 ---
 
-##  Requirements
+## Requirements
 
 - **Java 17+**
 - **Android Studio Bumblebee or newer**
 - **Node.js v16** (via `nvm`)
 - **npm v8.4.1**
+- **Xcode (for iOS build)**
 - **Mountebank** (installed globally)
 
 ---
 
-##  Setup Guide
+## Setup Guide
 
 ### 1. Install Node.js and Mountebank
 
@@ -72,17 +75,19 @@ mb --configfile imposters.ejs --ip 0.0.0.0
 #### a. Emulator
 
 ```kotlin
- val BASE_URL = "http://10.0.2.2:2727"
+val BASE_URL = "http://10.0.2.2:2727"
 ```
 
 #### b. Physical Device
 
 1. Ensure laptop and device are on the same Wi-Fi.
-2. Find your laptop’s IP (e.g., `192.168.0.102`).
+2. Find your laptop’s IP address:
+    - macOS/Linux: `ifconfig | grep inet`
+    - Windows: `ipconfig`
 3. Update base URL:
 
 ```kotlin
- val BASE_URL = "http://192.168.0.102:2727"
+val BASE_URL = "http://<YOUR_LAPTOP_IP>:2727"
 ```
 
 > Make sure firewall allows incoming traffic on port `2727`.
@@ -91,23 +96,67 @@ mb --configfile imposters.ejs --ip 0.0.0.0
 
 ### 4. Build & Run the App
 
+#### Android
+
 1. Open the project in Android Studio.
-2. Select your target (emulator or device).
-3. Run the app. It should fetch data from the Mountebank server.
+2. Select an Android device or emulator.
+3. Click Run.
+
+#### iOS
+
+1. Open the `iosApp` module in Xcode.
+2. Ensure a simulator or device is connected.
+3. Click the Run button in Xcode.
+
+> You can also use `./gradlew iosX64RunDebugExecutable` for CLI.
 
 ---
 
-##  Project Structure
+## Caching Mechanism
+
+This project uses [Multiplatform Settings](https://github.com/russhwolf/multiplatform-settings) to cache basic user/session data across platforms. It's a lightweight key-value store available in both Android and iOS, similar to SharedPreferences or NSUserDefaults.
+
+Usage:
+
+```kotlin
+val settings = Settings()
+settings.putString("user_token", "abc123")
+val token = settings.getStringOrNull("user_token")
+```
+
+This ensures fast access to frequently used data without repeated network calls.
+
+---
+
+## Screenshots
+
+### Android
+![Android Login](screenshots/Screenshot - Moto - 1.png)
+![Android Home](screenshots/Screenshot - Moto - 2.png)
+![Android Product Details](screenshots/Screenshot - Moto - 3.png)
+![Android Profile](screenshots/Screenshot - Moto - 4.png)
+
+### iOS
+![iOS Login](screenshots/Screenshot - iPhone 16 Pro - 1.png)
+![iOS Home](screenshots/Screenshot - iPhone 16 Pro - 2.png)
+![iOS Product Details](screenshots/Screenshot - iPhone 16 Pro - 3.png)
+![iOS Profile](screenshots/Screenshot - iPhone 16 Pro - 4.png)
+
+> Make sure these images are present in a `/screenshots` folder.
+
+---
+
+## Project Structure
 
 - `presentation/` – UI screens (Home, Profile, Login)
 - `domain/` – Data models
-- `data/` – Ktor client setup
+- `data/` – Ktor client setup and API implementation
 - `di/` – Koin modules
 - `imposters.ejs` – Mountebank configuration
 
 ---
 
-##  Troubleshooting
+## Troubleshooting
 
 | Issue                       | Fix                                                                  |
 |-----------------------------|----------------------------------------------------------------------|
@@ -117,8 +166,8 @@ mb --configfile imposters.ejs --ip 0.0.0.0
 
 ---
 
-##  Support
+## Support
 
 **Sumit Kotal**  
-📧 kotalsumit@gmail.com  
-📱 +91 9930884866
+kotalsumit@gmail.com  
++91 9930884866
