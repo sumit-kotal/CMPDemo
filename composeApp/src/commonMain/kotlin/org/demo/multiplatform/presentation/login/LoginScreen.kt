@@ -45,6 +45,7 @@ import compose.icons.feathericons.EyeOff
 import compose.icons.feathericons.Key
 import compose.icons.feathericons.User
 import org.demo.multiplatform.domain.model.Credentials
+import org.demo.multiplatform.presentation.RootScreen
 import org.demo.multiplatform.presentation.home.HomeScreen
 import org.koin.compose.koinInject
 
@@ -115,7 +116,7 @@ fun LoginForm(viewModel: LoginViewModel, navigator: Navigator) {
                     }
                     else {
                         viewModel.onLoginClick()
-                        navigator.push(HomeScreen)
+                        navigator.push(RootScreen)
                     }
                 },
                 enabled = credentials.isNotEmpty(),

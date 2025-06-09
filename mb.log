@@ -9,3 +9,7 @@
 {"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:192.168.0.113:47096 => GET /products","timestamp":"2025-06-09T15:14:19.319Z"}
 {"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:192.168.0.113:47098 => GET /products","timestamp":"2025-06-09T15:14:22.375Z"}
 {"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:192.168.0.113:47112 => GET /profile","timestamp":"2025-06-09T15:18:04.156Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:192.168.0.113:47744 => GET /products","timestamp":"2025-06-09T15:36:22.747Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:192.168.0.113:47746 => GET /products","timestamp":"2025-06-09T15:36:26.512Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:192.168.0.113:47748 => GET /products","timestamp":"2025-06-09T15:36:28.610Z"}
+{"level":"info","message":"[http:2727 KMP Local Mock Server] ::ffff:192.168.0.113:47752 => GET /products","timestamp":"2025-06-09T15:36:30.504Z"}

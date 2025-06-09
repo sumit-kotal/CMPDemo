@@ -18,3 +18,4 @@ Pods/
 mb.log
 mb.pid
 mb1.log
+*.log
