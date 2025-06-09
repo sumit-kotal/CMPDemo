@@ -47,7 +47,7 @@ kotlin {
             implementation(libs.multiplatformSettings)
             implementation(libs.materialKolor)
             implementation(libs.coil)
-            implementation(libs.coil.network)
+            implementation(libs.coil.network.ktor)
             implementation(libs.composeIcons.featherIcons)
         }
 

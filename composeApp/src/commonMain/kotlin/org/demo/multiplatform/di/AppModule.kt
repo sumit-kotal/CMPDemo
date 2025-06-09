@@ -12,13 +12,12 @@ import org.demo.multiplatform.presentation.detail.ProductDetailViewModel
 import org.demo.multiplatform.presentation.profile.ProfileViewModel
 import org.koin.dsl.module
 
-fun appModule() = module {
-
-    networkModule
-    repositoryModule
-    viewModelModule
+fun appModule() = listOf(
+    networkModule,
+    viewModelModule,
+    repositoryModule,
     settingsModule
-}
+)
 
 /**
  * Module providing settings-related dependencies.
