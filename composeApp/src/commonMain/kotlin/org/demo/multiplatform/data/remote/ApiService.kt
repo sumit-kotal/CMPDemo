@@ -18,7 +18,7 @@ class ApiService {
         }
     }
 
-    private val baseUrl = "http://10.0.2.2:2727"
+    private val baseUrl = "http://192.168.0.196:2727"
 
     suspend fun getProducts(): List<Product> {
         return try {
